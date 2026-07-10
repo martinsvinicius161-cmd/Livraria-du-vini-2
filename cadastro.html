@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+
+    <div class="titulo">
+        <h1>📚 Livraria DU VINI</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="conteudo">
+
+    <h2>Cadastro de Cliente</h2>
+
+    <p>Preencha os dados abaixo para fazer parte da Livraria DU VINI.</p>
+
+    <form>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" minlength="6" required>
+
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado</label>
+
+        <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option>Piauí</option>
+            <option>Maranhão</option>
+            <option>Ceará</option>
+            <option>Pernambuco</option>
+            <option>Bahia</option>
+        </select>
+
+        <label>Gênero favorito</label>
+
+        <input type="radio" id="romance" name="genero">
+        <label for="romance">Romance</label>
+
+        <input type="radio" id="aventura" name="genero">
+        <label for="aventura">Aventura</label>
+
+        <input type="radio" id="ficcao" name="genero">
+        <label for="ficcao">Ficção</label>
+
+        <label for="obs">Observações</label>
+        <textarea id="obs" name="obs" rows="5"></textarea>
+
+        <br>
+
+        <input type="checkbox" id="aceito" required>
+        <label for="aceito">Aceito os termos de cadastro.</label>
+
+        <br><br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>© 2026 - Livraria DU VINI</p>
+    <p>Projeto desenvolvido para a disciplina de Front-End.</p>
+
+</footer>
+
+</body>
+</html>
